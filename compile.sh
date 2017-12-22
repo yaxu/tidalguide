@@ -5,3 +5,4 @@ if [ -d "$HOME/.cabal/bin" ] ; then
 fi
 
 ~/.cabal/bin/pandoc -s 0*.md --pdf-engine=xelatex --variable mainfont="Brill" --filter render.hs -o all.pdf
+~/.cabal/bin/pandoc -s 0*.md --variable mainfont="Brill" --filter render.hs -o all.html
